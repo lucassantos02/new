@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulário</title>
+</head>
+<body>
+    <form>
+        <p>
+            <label for="nome"> Nome </label>
+        </p>
+        <p>
+            <input type="text" name="Nome" id="nome" required placeholder="Digite seu nome aqui...">
+        </p>
+        <p>
+            <label for="email"> Email </label>
+        </p>
+        <p>
+            <input type="text" name="Email" id="email" placeholder="Digite seu email aqui..." required>
+        
+        </p>
+        <p>
+            <label for="descricao"> Descrição </label>
+        </p>
+        <p>
+            <textarea name="Descrição" id="descricao" cols="30" rows="10" required placeholder="Fale mais sobre você aqui..."></textarea>
+        </p>
+        <p>
+            <label for="modulo"> Módulo </label>
+        </p>
+        <p>
+            <select name="Módulo" id="modulo" required>
+                <option value=""> Escolher Módulo </option>
+                <option value="M1"> Módulo 1 </option>
+                <option value="M2"> Módulo 2 </option>
+                <option value="M3"> Módulo 3 </option>
+                <option value="M4"> Módulo 4 </option>
+                <option value="M5"> Módulo 5 </option>
+                <option value="M6"> Módulo 6 </option>
+            </select>
+        </p>
+        <p>
+            <label for="senha"> Senha </label>
+        </p>
+        <p>
+            <input type= "password" name="Senha" id="senha" required maxlength="10" minlength="6" placeholder="Digite aqui sua senha...">
+        </p>
+        <p>
+            <label for="confirmarsenha"> Confirmar senha </label>
+        </p>
+        <p>
+            <input type="password" required id="confirmarsenha" name="" maxlength="10" minlength="6" placeholder="Digite sua senha novamente aqui...">
+        </p>
+        <p>
+            Deseja receber novidades no email?
+        </p>
+        <p>
+            <label for="sim"> Sim </label>
+            <input type="radio" id="sim" name="Novidades">
+
+            <label for="nao"> Não </label>
+            <input type="radio" id="nao" name="Novidades">
+        </p>
+        <p>
+            <button type="submit"> Cadastrar </button>
+        </p>
+    </form>
+</body>
+</html>
